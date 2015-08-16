@@ -39,7 +39,7 @@ try:
 					
 				print("measured : %s %s" % (measured, unit))
 				
-				# to compare previous measurement , use major and minor
+				# to compare previous measurement , use major and minor ( should be time)
 	
 except KeyboardInterrupt:
        sys.exit(1)
