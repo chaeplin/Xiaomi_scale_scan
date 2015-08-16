@@ -30,13 +30,15 @@ try:
 			(mac, uuid, major, minor, txpower, rssi) = returnedList[0].split(',', 6)
 			if mac == '88:0f:10:83:ca:5c' and uuid[0:22] == '01880f1083ca5c0d161d18':
 				measunit = uuid[22:24]	
-                measured = int((uuid[26:28] + uuid[24:26]), 16) * 0.01
+                		measured = int((uuid[26:28] + uuid[24:26]), 16) * 0.01
 	   
 				if measunit == '03' or measunit == 'a3' : unit = 'lbs' 
 				if measunit == '12' or measunit == 'b2' : unit = 'jin'
 				if measunit == '22' or measunit == 'a2' : unit = 'Kg' ;  measured = measured / 2
 					
 				print("measured : %s %s" % (measured, unit))
+				
+				# to compare previous measurement , use major and minor
 	
 except KeyboardInterrupt:
        sys.exit(1)
