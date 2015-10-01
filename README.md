@@ -1,3 +1,3 @@
 # Xiaomi_scale_scan
 
-read Xiaomi scale adv data
+read Xiaomi weight scale adv data
