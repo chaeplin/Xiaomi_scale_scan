@@ -6,6 +6,9 @@
 # test BLE Scanning software
 # jcs 6/8/2014
 
+# ble scan with nrf51822
+# https://github.com/chaeplin/nrf51822_and_arduino/blob/master/_12-xiaomi_scale_scan/_12-xiaomi_scale_scan.ino
+
 import blescan
 import sys
 import time
